@@ -47,7 +47,17 @@ const Careers = styled(Button)(({ theme }) => ({
   },
 }));
 
-const TopMenuIcon = styled(Box)({
+const TopMenuText = styled(Box)(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  paddingRight: "2.5vw",
+  paddingLeft: "5vw",
+  [theme.breakpoints.down("sm")]: {
+    display: "none",
+  },
+}));
+
+const TopMenu = styled(Box)({
   display: "flex",
   alignItems: "center",
   paddingRight: "2.5vw",
@@ -72,6 +82,7 @@ export {
   ListMenu,
   Resources,
   Services,
-  TopMenuIcon,
+  TopMenu,
+  TopMenuText,
   TopNavBar,
 };
