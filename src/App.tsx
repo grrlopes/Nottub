@@ -1,4 +1,5 @@
 import { Box, CssBaseline, Divider, Stack } from "@mui/material";
+import { Outlet } from "react-router-dom";
 import { Topbar } from "./components/navbar/TopBar";
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
         direction="column"
         divider={<Divider orientation="vertical" flexItem />}
         spacing={2}
-      ></Stack>
+        alignItems="center"
+      >
+        <Outlet />
+      </Stack>
     </Box>
   );
 }

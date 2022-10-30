@@ -8,6 +8,7 @@ import {
   Menu as MenuIcon,
 } from "@mui/icons-material";
 import * as S from "./Styles";
+import { useNavigate } from "react-router-dom";
 
 const Topbar = () => {
   const [drop, setDrop] = useState<null | HTMLElement>(null);
@@ -22,6 +23,7 @@ const Topbar = () => {
     setDrop(null);
   };
 
+  const navigation = useNavigate();
   return (
     <S.TopNavBar>
       <S.TopMenu>
@@ -35,7 +37,13 @@ const Topbar = () => {
 
       <S.TopMenu sx={{ gap: "60px" }}>
         <S.TopMenuText>
-          <S.About>About</S.About>
+          <S.About
+            onClick={() => {
+              navigation("about");
+            }}
+          >
+            About
+          </S.About>
 
           <S.Services>Services</S.Services>
 
