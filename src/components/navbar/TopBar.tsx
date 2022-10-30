@@ -35,7 +35,7 @@ const Topbar = () => {
         </Typography>
       </S.TopMenu>
 
-      <S.TopMenu sx={{ gap: "60px" }}>
+      <S.TopMenu>
         <S.TopMenuText>
           <S.About
             onClick={() => {

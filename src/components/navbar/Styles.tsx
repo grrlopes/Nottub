@@ -4,7 +4,6 @@ const TopNavBar = styled(Box)({
   display: "flex",
   justifyContent: "space-between",
   background: "white",
-  marginTop: "8vh",
 });
 
 const About = styled(Button)(({ theme }) => ({
@@ -50,8 +49,7 @@ const Careers = styled(Button)(({ theme }) => ({
 const TopMenuText = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
-  paddingRight: "2.5vw",
-  paddingLeft: "5vw",
+  gap: "40px",
   [theme.breakpoints.down("sm")]: {
     display: "none",
   },
@@ -60,8 +58,6 @@ const TopMenuText = styled(Box)(({ theme }) => ({
 const TopMenu = styled(Box)({
   display: "flex",
   alignItems: "center",
-  paddingRight: "2.5vw",
-  paddingLeft: "5vw",
 });
 
 const ListMenu = styled(MenuItem)({
