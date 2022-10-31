@@ -14,6 +14,7 @@ const AboutBox = styled(Box)(({ theme }) => ({
 const Story = styled(Box)({
   display: "flex",
   justifyContent: "space-between",
+  alignItems: "center",
   gap: 20,
 });
 
@@ -21,6 +22,7 @@ const StoryTxt = styled(Box)({
   display: "flex",
   flexDirection: "column",
   width: "60vw",
+  gap: 25,
 });
 
 const Mission = styled(Box)({
