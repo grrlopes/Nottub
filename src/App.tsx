@@ -1,5 +1,6 @@
 import { Box, CssBaseline, Stack } from "@mui/material";
 import { Outlet } from "react-router-dom";
+import { Footer } from "./components/footer/Footer";
 import { Topbar } from "./components/navbar/TopBar";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       >
         <Topbar />
         <Outlet />
+        <Footer />
       </Stack>
     </Box>
   );
