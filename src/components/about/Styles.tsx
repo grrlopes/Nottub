@@ -1,16 +1,5 @@
 import { Box, styled } from "@mui/material";
 
-const AboutBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  alignSelf: "center",
-  marginBottom: "15vh",
-  [theme.breakpoints.down("sm")]: {
-    marginBottom: "10vh",
-  },
-  gap: 10,
-}));
-
 const Story = styled(Box)({
   display: "flex",
   justifyContent: "space-between",
@@ -29,7 +18,7 @@ const Mission = styled(Box)({
   display: "flex",
   justifyContent: "space-between",
   marginTop: "22vh",
-  gap: 20
+  gap: 20,
 });
 
 const MissionTxt = styled(Box)({
