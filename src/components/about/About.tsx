@@ -1,4 +1,5 @@
-import { Card, CardMedia, Typography } from "@mui/material";
+import { Button, Card, CardMedia, Divider, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import { Fragment } from "react";
 import * as S from "./Styles";
 
@@ -70,6 +71,49 @@ const About = () => {
           />
         </Card>
       </S.Story>
+
+      <S.PlaceWork>
+        <S.PlaceWorkTxt>
+          <Typography variant="h3" gutterBottom>
+            Enim eu turpis egestas pretium.
+          </Typography>
+
+          <Typography variant="h6" gutterBottom>
+            Justo nec ultrices dui sapien eget mi proin sed. Dictum varius duis
+            at Bibendum arcu vitae elementum curabitur vitae. Tellus cras
+            adipiscing enim eu turpis egestas pretium aenean pharetra. Auctor
+            neque vitae tempus quam pellentesque nec. Eleifend mi in nulla
+            posuere sollicitudin aliquam ultrices sagittis. Viverra suspendisse
+            potenti nullam ac tortor vitae purus faucibus ornare.
+          </Typography>
+        </S.PlaceWorkTxt>
+      </S.PlaceWork>
+
+      <S.ThinkWork>
+        <S.ThinkWorkTxt>
+          <Typography variant="h3" gutterBottom>
+            Auctor elit sed vulputate mi sit.
+          </Typography>
+
+          <Typography variant="h6" gutterBottom>
+            Sed velit dignissim sodales ut eu sem integer vitae justo.
+          </Typography>
+          <Box sx={{ marginTop: "5vh", marginBottom: "8vh" }}>
+            <Button variant="contained" size="large" disableElevation>
+              Careers
+            </Button>
+          </Box>
+          <Divider sx={{ marginBottom: "5vh" }} variant="middle" />
+          <Typography fontSize="1rem" gutterBottom>
+            Justo nec ultrices dui sapien eget mi proin sed. Dictum varius duis
+            at Bibendum arcu vitae elementum curabitur vitae. Tellus cras
+            adipiscing enim eu turpis egestas pretium aenean pharetra. Auctor
+            neque vitae tempus quam pellentesque nec. Eleifend mi in nulla
+            posuere sollicitudin aliquam ultrices sagittis. Viverra suspendisse
+            potenti nullam ac tortor vitae purus faucibus ornare.
+          </Typography>
+        </S.ThinkWorkTxt>
+      </S.ThinkWork>
     </Fragment>
   );
 };

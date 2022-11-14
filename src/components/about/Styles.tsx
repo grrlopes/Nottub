@@ -26,4 +26,40 @@ const MissionTxt = styled(Box)({
   flexDirection: "column",
   width: "60vw",
 });
-export { Mission, MissionTxt, Story, StoryTxt };
+
+const PlaceWork = styled(Box)({
+  display: "flex",
+  justifyContent: "space-between",
+  marginTop: "22vh",
+  gap: 20,
+});
+
+const PlaceWorkTxt = styled(Box)({
+  display: "flex",
+  flexDirection: "column",
+  width: "60vw",
+});
+
+const ThinkWork = styled(Box)({
+  display: "flex",
+  justifyContent: "space-between",
+  marginTop: "22vh",
+  gap: 20,
+});
+
+const ThinkWorkTxt = styled(Box)({
+  display: "flex",
+  flexDirection: "column",
+  width: "60vw",
+});
+
+export {
+  Mission,
+  MissionTxt,
+  PlaceWork,
+  PlaceWorkTxt,
+  Story,
+  StoryTxt,
+  ThinkWork,
+  ThinkWorkTxt,
+};
