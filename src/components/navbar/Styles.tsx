@@ -58,6 +58,7 @@ const TopMenuText = styled(Box)(({ theme }) => ({
 const TopMenu = styled(Box)({
   display: "flex",
   alignItems: "center",
+  cursor: "pointer",
 });
 
 const ListMenu = styled(MenuItem)({

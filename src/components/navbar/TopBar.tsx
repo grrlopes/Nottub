@@ -26,7 +26,11 @@ const Topbar = () => {
   const navigation = useNavigate();
   return (
     <S.TopNavBar>
-      <S.TopMenu>
+      <S.TopMenu
+        onClick={() => {
+          navigation("");
+        }}
+      >
         <IconButton>
           <CircleIcon sx={{ fontSize: "50px", color: "blueviolet" }} />
         </IconButton>
@@ -41,11 +45,12 @@ const Topbar = () => {
             onClick={() => {
               navigation("about");
             }}
+            disableRipple
           >
             About
           </S.About>
 
-          <S.Services>Services</S.Services>
+          <S.Services disableRipple>Services</S.Services>
 
           <S.Resources
             id="resource_btn"
@@ -53,6 +58,7 @@ const Topbar = () => {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
             onClick={resourceOpen}
+            disableRipple
           >
             Resource
             <KeyArrowDownIcon />
@@ -71,18 +77,18 @@ const Topbar = () => {
               <IconButton>
                 <EditIcon sx={{ color: "white" }} />
               </IconButton>
-              Button Blog
+              Btn sample 1
             </S.ListMenu>
 
             <S.ListMenu onClick={resourceClose}>
               <IconButton>
                 <EmailIcon sx={{ color: "white" }} />
               </IconButton>
-              Button Insight
+              Btn sample 2
             </S.ListMenu>
           </Menu>
 
-          <S.Careers>Careers</S.Careers>
+          <S.Careers disableRipple>Careers</S.Careers>
         </S.TopMenuText>
 
         <IconButton>
