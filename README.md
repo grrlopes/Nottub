@@ -1,7 +1,7 @@
 nottub
 =======
 
-nottub is in use in reference and includes a number of features and dynamic feature from Api.
+nottub is used in reference and includes a number of features and dynamic feature from Api.
 
 ## Dependencies:
 ```
