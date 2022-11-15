@@ -88,7 +88,14 @@ const Topbar = () => {
             </S.ListMenu>
           </Menu>
 
-          <S.Careers disableRipple>Careers</S.Careers>
+          <S.Careers
+            disableRipple
+            onClick={() => {
+              navigation("about");
+            }}
+          >
+            Careers
+          </S.Careers>
         </S.TopMenuText>
 
         <IconButton>
